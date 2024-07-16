@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: theme('colors.background');
+  color: theme('colors.text');
+  font-family: 'Inter', sans-serif;
+}
+
+button {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: theme('colors.secondary');
+  color: theme('colors.accent');
+}
+
+input, select {
+  transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: theme('colors.primary');
+}
